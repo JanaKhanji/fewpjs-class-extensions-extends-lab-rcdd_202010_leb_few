@@ -15,7 +15,7 @@ class Polygon {
 }
 
 class Triangle extends Polygon{
-  isValid (){
+  get isValid (){
     let x=false;
     if(this.count===3){
       if(this.sides[0]+this.sides[1]>=this.sides[2] &&
@@ -28,7 +28,7 @@ class Triangle extends Polygon{
 }
 
 class Square extends Polygon{
-  isValid (){
+ get isValid (){
     let x=false;
     if(this.count===4){
       if(this.sides[0]===this.sides[1] &&
